@@ -12,7 +12,7 @@ posix <- as.POSIXct(paste(dates, times), format="%Y-%m-%d %H:%M:%S")
 acpwr <- as.numeric(as.character(sub$Global_active_power))
 
 #plotting
-plot(posix, acpwr, type="l", ylab="Global Active Power (kilowatts)")
+plot(posix, acpwr, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 
 #saving as png image file
 dev.copy(png,'plot2.png', width = 480, height = 480)
